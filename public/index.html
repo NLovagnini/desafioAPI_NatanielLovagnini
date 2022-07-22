@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+</head>
+<body>
+    <h2>Submit a Product</h2>
+
+    <form action="/api/productos" method="post" enctype="multipart/form-data">
+        <label for="title" class="formLabel">Name of the product:</label>
+        <br>
+        <input type="text" name="title" class="textInput" required>
+        <br>
+        <label for="title" class="formLabel">Price of the product:</label>
+        <br>
+        <input type="number" name="price" class="textInput" step=".01" required>
+        <br>
+        <label for="thumbnail" class="formLabel">Upload an image for the product. (You can get it from <a
+                href="https://www.iconfinder.com/icons" target="_blank">here</a>)</label>
+        <br>
+        <input type="file" name="thumbnail" class="fileInput" required>
+        <br>
+        <input type="submit" value="Submit product" class="submitBtn">
+    </form>
+
+
+    <script src="server.js"></script>
+</body>
+</html>
