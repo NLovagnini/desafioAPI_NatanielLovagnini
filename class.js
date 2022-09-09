@@ -26,7 +26,7 @@ module.exports = class Container {
         try{
 
             let lastId
-            const products = await this.read();
+            const products = this.read();
             const startingId = products.at(-1).id
 
             if(startingId < lastId){
